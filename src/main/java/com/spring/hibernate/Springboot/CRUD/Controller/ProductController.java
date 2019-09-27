@@ -42,8 +42,6 @@ public class ProductController {
         }
         return ResponseEntity.ok().body(pro);
     }
-
-
     /*update a product*/
     @PutMapping("/update/{pid}")
     public ResponseEntity<products> updateProduct(@PathVariable(value = "pid") Integer pid, @Valid @RequestBody products prodetails){
