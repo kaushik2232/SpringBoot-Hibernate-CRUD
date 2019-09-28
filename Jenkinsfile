@@ -15,12 +15,5 @@ pipeline {
                     }
                 }
             }
-            stage ('Deployment Stage') {
-                steps{
-                    withMaven(maven:'maven_3_6_0') {
-                        bat 'mvn deploy'
-                    }
-                }
-            }
         }
     }
